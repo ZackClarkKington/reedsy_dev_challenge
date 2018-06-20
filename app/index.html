@@ -14,12 +14,14 @@
 <body>
   <div class="bestsellers">
     <h2>Most popular books of all time</h2>
-    <book ng-repeat="book in books" data="book"></book>
+    <page-of-books></page-of-books>
   </div>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/rxjs/modules/rx-lite/rx.lite.js"></script>  
+  <script src="bower_components/rx-angular/modules/rx.lite.angular/rx.lite.angular.js"></script>  
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
-  <script src="interfaces/interfaces.js"></script>
   <script src="components/components.js"></script>
+  <script src="services/services.js"></script>
 </body>
 </html>

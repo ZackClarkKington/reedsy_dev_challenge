@@ -1,15 +1,15 @@
 namespace BooksApp.interfaces {
 	export interface Book {
-		title: String;
-		author: String;
-		published: Date;
-		rating: Number;
-		isbn: String;
+		title: string;
+		author: string;
+		published: string;
+		rating: number;
+		isbn: string;
 	}
 
 	export interface BookList {
 		books: Book[];
-		pageNum: Number;
-		moreBooks: Boolean;
+		pageNum: number;
+		moreBooks: boolean;
 	}
 }
