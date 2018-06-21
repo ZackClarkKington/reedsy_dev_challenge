@@ -1,2 +1,21 @@
-<td>{{controller.data.title}}</td>
-<td>{{controller.data.rating}}</td>
+<div ng-click="controller.toggleDetails()" class="book-entry">
+	<div class="book-entry-img-col">
+		<img ng-src="{{controller.getThumbnail()}}" class="book-thumbnail" />
+	</div>
+	<div class="book-entry-col">
+		<b>{{controller.getTitle()}}</b>
+		<p>{{controller.getAuthor()}}</p>
+	</div>
+	<div class="book-entry-col">
+		<p>{{controller.getPublicationYear()}}</p>
+	</div>
+	<div class="book-entry-col">
+		<p>{{controller.getRating()}}/10</p>
+	</div>
+	<div class="book-entry-col book-entry-stores">
+		<a class="store-link" ng-repeat="link in controller.getStoreLinks()" href="{{link.link}}">{{link.store_name}}</a>
+	</div>
+</div>
+<div ng-if="controller.showDetails" class="book-details">
+	<p>{{controller.data.description}}</p>
+</div>

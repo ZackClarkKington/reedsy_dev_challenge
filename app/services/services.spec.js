@@ -31,7 +31,20 @@ describe('BookList service', function(){
 		bookdata.books.pageNum = 2;
 		bookdata.previousPage();
 		expect(bookdata.books.pageNum).toEqual(1);
-	}))
+	}));
+
+	describe('hasMorePages()', function(){
+		it('defines a hasMorePages method', inject(function(bookdata){
+			expect(bookdata.hasMorePages).toBeDefined();
+			expect(typeof(bookdata.hasMorePages)).toEqual('function');
+		}));
+
+		it('returns whether there are more pages to view', inject(function(bookdata){
+			expect(bookdata.hasMorePages()).toEqual(false);
+			bookdata.books.moreBooks = true;
+			expect(bookdata.hasMorePages()).toEqual(true);
+		}))
+	});
 
 	describe('getPage()', function(){
 		var books = readJSON('books.json');

@@ -1,5 +1,8 @@
-<div>
+<div class="grid-container">
 	<book ng-repeat="book in controller.data" data="book"></book>
-	<button ng-click="controller.previousPage()">Previous Page</button>
-	<button ng-click="controller.nextPage()">Next Page</button>
+</div>
+<div class="page-controller">
+	<a class="page-controller-btn {{controller.bookdata.hasPreviousPages()? '': 'disabled'}}" ng-click="controller.previousPage()"><</a>
+	<b>{{controller.bookdata.getPageNum()}} of {{controller.bookdata.getNumberOfPages()}}</b>
+	<a class="page-controller-btn {{controller.bookdata.hasMorePages()? '': 'disabled'}}" ng-click="controller.nextPage()">></a>
 </div>

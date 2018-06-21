@@ -8,6 +8,7 @@ namespace BooksApp.components {
 
 	class PageOfBooksComponentController implements ng.IController {
 		data: BooksApp.interfaces.Book[];
+
 		constructor(private bookdata) {
 			bookdata.getPage().subscribe({
 				onNext: page => {
@@ -46,10 +47,46 @@ namespace BooksApp.components {
 
 	class BookComponentController implements ng.IController {
 		data: BooksApp.interfaces.Book;
+		showDetails: boolean;
 
 		constructor(){
+			this.showDetails = false;
+		}
+
+		getTitle(): string {
+			return this.data.title;
+		}
+
+		getAuthor(): string {
+			return this.data.author;
+		}
+
+		getRating(): string {
+			return this.data.rating.toString();
+		}
+
+		getPublicationYear(): string{
+			var d = new Date(this.data.published);
+			return d.getFullYear().toString();
+		}
+
+		getStoreLinks(): BooksApp.interfaces.Store[] {
+			return this.data.store_links;
+		}
+
+		getDescription(): string {
+			return this.data.description;
+		}
+
+		getThumbnail(): string {
+			return this.data.thumbnail;
+		}
+
+		toggleDetails(){
+			this.showDetails = !this.showDetails;
 		}
 	}
+
 	var page_of_books = angular.module('books').component("pageOfBooks", new PageOfBooksComponent());
 	page_of_books.controller("PageController", PageOfBooksComponentController);
 

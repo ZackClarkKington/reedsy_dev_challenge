@@ -5,8 +5,11 @@
     "results": [
         {
             "amazon_product_url": "https://www.amazon.com/President-Missing-Novel-James-Patterson/dp/0316412694?tag=NYTBS-20",
+            "ibooks_product_url": "https://itunes.apple.com/us/book/the-president-is-missing/id1247371482?mt=11",
+            "play_store_product_url": "https://play.google.com/store/books/details/James_Patterson_The_President_Is_Missing?id=DVnODgAAQBAJ",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
+            "thumbnail": "http://books.google.com/books/content?id=3PqrswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "book_details": [
                 {
                     "age_group": "",
@@ -54,6 +57,8 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Outsider-Novel-Stephen-King/dp/1501180983?tag=NYTBS-20",
+            "ibooks_product_url": "https://itunes.apple.com/us/book/the-outsider/id1329468505?mt=11",
+            "thumbnail": "http://books.google.com/books/content?id=uiVHDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -103,6 +108,8 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Shelter-Place-Nora-Roberts-ebook/dp/B076BGDMK9?tag=NYTBS-20",
+            "ibooks_product_url": "https://itunes.apple.com/us/book/shelter-in-place/id1296847395?mt=11",
+            "thumbnail":"http://books.google.com/books/content?id=nVxBDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -160,6 +167,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Death-Mrs-Westaway-Ruth-Ware/dp/1501156217?tag=NYTBS-20",
+            "thumbnail": "http://books.google.com/books/content?id=4-JLDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -209,6 +217,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Brief-Cases-Dresden-Files-Butcher-ebook/dp/B077WYGXPP?tag=NYTBS-20",
+            "thumbnail": "http://books.google.com/books/content?id=lZFCDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -254,6 +263,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Fallen-Memory-Man-David-Baldacci-ebook/dp/B074M62RVY?tag=NYTBS-20",
+            "thumbnail": "http://books.google.com/books/content?id=57mxtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -331,6 +341,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Gray-Ghost-Remi-Fargo-Adventure-ebook/dp/B075HY5MJK?tag=NYTBS-20",
+            "thumbnail": "https://images.penguinrandomhouse.com/cover/9780735218734",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -376,6 +387,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/When-Life-Gives-You-Lululemons-ebook/dp/B078MC8G1X?tag=NYTBS-20",
+            "thumbnail": "http://books.google.com/books/content?id=7KZVtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -421,6 +433,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Us-Against-You-Novel-Beartown/dp/1501160796?tag=NYTBS-20",
+            "thumbnail": "https://images.booksense.com/images/790/160/9781501160790.jpg",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -462,6 +475,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Turbulence-Stone-Barrington-Novel-Stuart-ebook/dp/B078G37F9W?tag=NYTBS-20",
+            "thumbnail": "https://books.google.co.uk/books/content?id=BdqhswEACAAJ&printsec=frontcover&img=1&zoom=1",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -507,6 +521,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Something-Water-Novel-Catherine-Steadman-ebook/dp/B075HYDH8B?tag=NYTBS-20",
+            "thumbnail": "http://books.google.com/books/content?id=KkZgtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -552,6 +567,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/17th-Suspect-Womens-Murder-Club-ebook/dp/B075CSX3KZ?tag=NYTBS-20",
+            "thumbnail": "http://books.google.com/books/content?id=4xJLswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -613,6 +629,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/There-novel-Tommy-Orange/dp/0525520376?tag=NYTBS-20",
+            "thumbnail": "http://books.google.com/books/content?id=8C-dswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -654,6 +671,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Before-We-Were-Yours-Novel/dp/0425284689?tag=NYTBS-20",
+            "thumbnail": "http://books.google.com/books/content?id=ecrPDgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [
@@ -707,6 +725,7 @@
         },
         {
             "amazon_product_url": "https://www.amazon.com/Little-Fires-Everywhere-Celeste-Ng-ebook/dp/B01N4VW75U?tag=NYTBS-20",
+            "thumbnail": "http://books.google.com/books/content?id=oVg1DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
             "asterisk": 0,
             "bestsellers_date": "2018-06-09",
             "book_details": [

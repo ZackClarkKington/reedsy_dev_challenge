@@ -9,3 +9,4 @@ app/**/*.js
 app/**/*.js.map
 !*.spec.js
 package-lock.json
+*.icloud
