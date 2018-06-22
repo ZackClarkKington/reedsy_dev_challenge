@@ -2,17 +2,17 @@
 	<div class="book-entry-img-col">
 		<img ng-src="{{controller.getThumbnail()}}" class="book-thumbnail" />
 	</div>
-	<div class="book-entry-col">
+	<div class="book-entry-col book-entry-title-col">
 		<b>{{controller.getTitle()}}</b>
-		<p>{{controller.getAuthor()}}</p>
+		<p class="book-entry-author">{{controller.getAuthor()}}</p>
 	</div>
-	<div class="book-entry-col">
+	<div class="book-entry-col book-entry-published-col">
 		<p>{{controller.getPublicationYear()}}</p>
 	</div>
-	<div class="book-entry-col">
+	<div class="book-entry-col book-entry-rating-col">
 		<p>{{controller.getRating()}}/10</p>
 	</div>
-	<div class="book-entry-col book-entry-stores">
+	<div class="book-entry-col book-entry-stores book-entry-store-col">
 		<a class="store-link" ng-repeat="link in controller.getStoreLinks()" href="{{link.link}}">{{link.store_name}}</a>
 	</div>
 </div>

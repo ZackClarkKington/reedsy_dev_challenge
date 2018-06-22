@@ -11,32 +11,41 @@ namespace BooksApp.services {
 			};
 		}
 
-		hasMorePages(): boolean{
+		public hasMorePages(): boolean{
 			return this.books.moreBooks;
 		}
 
-		hasPreviousPages(): boolean{
+		public hasPreviousPages(): boolean{
 			return (this.books.pageNum > 0);
 		}
 
-		advancePage(){
+		public advancePage(){
 			if(this.hasMorePages()) this.books.pageNum++;
 		}
 
-		previousPage(){
+		public previousPage(){
 			if(this.hasPreviousPages()) this.books.pageNum--;
 		}
 
-		getPageNum(): number{
+		public getPageNum(): number{
 			return this.books.pageNum + 1;
 		}
 
-		getNumberOfPages(): number{
+		public getNumberOfPages(): number{
 			return this.books.books.length / 5;
 		}
 
+		/* This method for normalising a string (i.e. converting to lowercase and capitalising first letter of each word)
+			will only work on ASCII characters and is based off the StackOverflow answer found here: 
+			https://stackoverflow.com/questions/2332811/capitalize-words-in-string
+		*/
+		private normaliseString(str: string): string {
+			var lowercased = str.toLowerCase();
+			return lowercased.replace(/\b\w/g, function(l){ return l.toUpperCase() });
+		}
+
 		//Observable used to inform caller when data is ready
-		getPage(): Rx.Observable<any>{
+		public getPage(): Rx.Observable<any>{
 			var generate_page = (observer: Rx.Observer<any>) => {
 				var page: BooksApp.interfaces.Book[] = [];
 				let min_index = this.books.pageNum * 5
@@ -61,7 +70,7 @@ namespace BooksApp.services {
 								let book_details = book['book_details'][0];
 								let date_published = book['published_date'];
 								var book_obj = {
-									title: book_details['title'],
+									title: this.normaliseString(book_details['title']),
 									author: book_details['author'],
 									published: date_published,
 									rating: book_details['average_rating'] * 2,

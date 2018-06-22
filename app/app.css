@@ -1,20 +1,23 @@
 /* app css stylesheet */
 body{
-  background-color: rgb(220,220,220);
+  background-color: #F5F1ED;
+  font-family: 'Roboto';
 }
 
 .bestsellers{
-  width: 90%;
+  width: 50%;
   height:80%;
   background-color: white;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-bottom: 1%;
   margin-top: 1%;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
+  padding-top: 10px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+  border-radius: 0.5%;
 }
 
 .book-entry{
@@ -22,17 +25,52 @@ body{
   height: 100px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.book-details{
+  padding-left: 5px;
+}
+
+.book{
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.book:nth-child(odd){
+  background: #FAF9F7;
 }
 
 .book-entry-col{
-  width: 22%;
   height: 100px;
+}
+
+.book-entry-title-col{
+  width: 50%;
+}
+
+.book-entry-published-col{
+  width: 15%;
+}
+
+.book-entry-rating-col{
+  width: 10%;
+}
+
+.book-entry-store-col{
+  width: 15%;
 }
 
 .book-entry-img-col{
   width: 10%;
   height: 100px;
+}
+
+div[class$="-col"]{
+  margin-right: 5px;
 }
 
 .book-thumbnail{
@@ -45,7 +83,8 @@ body{
   height: 50px;
   display: flex;
   flex-direction: row;
-  color: #888;
+  color: #9B9B9B;
+  padding-left: 5px;
 }
 .book-heading-blank-col{
   width: 10%;
@@ -53,7 +92,6 @@ body{
   padding-bottom: 10px;
 }
 .book-heading-col{
-  width: 22%;
   height: 50px;
   padding-bottom: 10px;
 }
@@ -74,9 +112,19 @@ body{
 .page-controller-btn{
   cursor: pointer;
   font-size: large;
+  color: #C0D68C;
 }
 
 .disabled {
-  color: #888;
+  color: #9B9B9B;
   cursor: default !important;
+}
+
+.book-entry-author{
+  color: #9B9B9B;
+}
+
+.store-link{
+  color: #C0D68C;
+  text-decoration: none;
 }

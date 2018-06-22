@@ -10,29 +10,25 @@ namespace BooksApp.components {
 		data: BooksApp.interfaces.Book[];
 
 		constructor(private bookdata) {
-			bookdata.getPage().subscribe({
+			this.getData();
+		}
+
+		private getData(){
+			this.bookdata.getPage().subscribe({
 				onNext: page => {
 					this.data = page;
 				}
-			});
+			})
 		}
 
-		nextPage(){
+		public nextPage(){
 			this.bookdata.advancePage();
-			this.bookdata.getPage().subscribe({
-				onNext: page => {
-					this.data = page;
-				}
-			});
+			this.getData();
 		}
 
-		previousPage(){
+		public previousPage(){
 			this.bookdata.previousPage();
-			this.bookdata.getPage().subscribe({
-				onNext: page => {
-					this.data = page;
-				}
-			});
+			this.getData();
 		}
 	}
 
@@ -50,40 +46,44 @@ namespace BooksApp.components {
 		showDetails: boolean;
 
 		constructor(){
-			this.showDetails = false;
+			this.setShowDetails(false);
 		}
 
-		getTitle(): string {
+		public getTitle(): string {
 			return this.data.title;
 		}
 
-		getAuthor(): string {
+		public getAuthor(): string {
 			return this.data.author;
 		}
 
-		getRating(): string {
+		public getRating(): string {
 			return this.data.rating.toString();
 		}
 
-		getPublicationYear(): string{
+		public getPublicationYear(): string{
 			var d = new Date(this.data.published);
 			return d.getFullYear().toString();
 		}
 
-		getStoreLinks(): BooksApp.interfaces.Store[] {
+		public getStoreLinks(): BooksApp.interfaces.Store[] {
 			return this.data.store_links;
 		}
 
-		getDescription(): string {
+		public getDescription(): string {
 			return this.data.description;
 		}
 
-		getThumbnail(): string {
+		public getThumbnail(): string {
 			return this.data.thumbnail;
 		}
 
-		toggleDetails(){
-			this.showDetails = !this.showDetails;
+		private setShowDetails(val : boolean){
+			this.showDetails = val;
+		}
+
+		public toggleDetails(){
+			this.setShowDetails(!this.showDetails);
 		}
 	}
 
