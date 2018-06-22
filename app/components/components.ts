@@ -17,6 +17,20 @@ namespace BooksApp.components {
 			this.bookdata.getPage().subscribe({
 				onNext: page => {
 					this.data = page;
+				},
+				onError: data => {
+					this.data = [
+						{
+							title: "Sorry, we couldn't find any books!",
+							author: "",
+							published: new Date().toString(),
+							rating: 0,
+							isbn: "",
+							store_links: [],
+							thumbnail: "",
+							description: ""
+						}
+					];
 				}
 			})
 		}

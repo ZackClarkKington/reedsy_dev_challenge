@@ -106,6 +106,8 @@ namespace BooksApp.services {
 						}).then(()=> {
 							//Generate a page of 5 books to be used by the caller
 							generate_page(observer)
+						}).catch((data)=>{
+							observer.onError(data);
 						});
 				} else {
 					//If the HTTP request has already been made before, then we can just generate a page of books for the caller
